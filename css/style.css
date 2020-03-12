@@ -1,3 +1,152 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    background-color: #141218;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    background: url("images/The Witcher.png") no-repeat border-box right;
+    background-size: contain;
+}
+
+/*-----------------------------*/
+
+header {
+    padding-top: 60px;
+}
+
+.container {
+    padding: 0 10px;
+    max-width: 1155px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__menu-list {
+    margin-left: 68px;
+    margin-right: auto;
+}
+
+.menu-link, .social-link {
+    /*display: inline-block;*/
+    text-decoration: none;
+    color: #fff;
+}
+
+.header__menu-list a + a {
+    margin-left: 24px;
+}
+
+.header__social a + a {
+    margin-left: 21px;
+}
+
+/*-----------------------------*/
+
+.main {
+    margin-top: 90px;
+}
+
+.main__rating {
+    margin-top: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.main__rating-stars ul {
+    list-style-type: none;
+}
+
+.main__rating-stars li {
+    display: inline-block;
+}
+
+.main__rating-mark {
+    margin-left: 165px;
+    font-size: 12px;
+    line-height: 14px;
+    position: absolute;
+    bottom: 2px;
+}
+
+.main__title {
+    margin-top: 10px;
+    font-family: Mason Chronicles;
+    font-weight: 500;
+    font-size: 76px;
+    line-height: 89px;
+}
+
+.main__content {
+    max-width: 458px;
+    margin-top: 10px;
+    line-height: 150%;
+}
+
+.main__button-link {
+    display: inline-block;
+    font-weight: 500;
+    background: #9D2929;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    padding: 22px 72px;
+    margin-top: 40px;
+    max-width: 260px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.main__series {
+    margin-top: 85px;
+    margin-bottom: 99px;
+}
+
+/*-----------------------------*/
+
+footer {
+    margin-top: auto;
+    padding: 20px 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.4;
+    line-height: 20px;
+}
+
+.footer__right a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer__right a + a {
+    margin-left: 25px;
+}
+
+/*-----------------------------*/
+
+@font-face {
+    font-family: 'Mason Chronicles';
+    src:url("../fonts/4026.ttf") format("truetype");
+}
