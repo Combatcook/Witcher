@@ -15,7 +15,7 @@ body {
 }
 
 .content {
-    background: url("images/The Witcher.png") no-repeat border-box right;
+    background: url("../images/background.jpg") no-repeat top right 37%;
     background-size: contain;
 }
 
