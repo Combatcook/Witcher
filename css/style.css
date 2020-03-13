@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 body {
     background-color: #141218;
     color: #fff;
@@ -144,10 +148,6 @@ header {
     top: -16px;
 }
 
-.main__button-play:hover {
-    cursor: pointer;
-}
-
 .play-image {
     position: relative;
     transform: translateX(5px);
@@ -159,6 +159,8 @@ header {
     display: flex;   
     align-items: center;
     margin-bottom: 60px;
+    position: relative;
+    max-width: 420px;
 }
 
 .main__series-card {
@@ -204,6 +206,10 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;
+    position: absolute;
+    top: 42%;
+    right: -35px;
+    outline: none;
 }
     
 /*-----------------------------*/

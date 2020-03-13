@@ -1,16 +1,7 @@
-$(function(){
-    $('.slider').slick({
-        arrows: false,
-        fade: true,
-        autoplay: 3000,
-        dots: true
-    });
-
-    $('.header-btn').on('click', function(){
-        $('.menu').addClass('active')
-    });
-
-    $('.close-btn').on('click', function(){
-        $('.menu').removeClass('active')
-    });
+var mySwiper = new Swiper('.swiper-container', {
+    slidesPerView: 2,
+    loop: true,
+    navigation: {
+        nextEl: '.arrow',
+      },
 });

@@ -19,11 +19,13 @@
           <div class="header__logo">
             <img src="images/logo.png" alt="logo">
           </div>
+
           <nav class="header__menu-list">
               <a class="menu-link" href="#">Описание</a>
               <a class="menu-link" href="#">Трейлер</a>
               <a class="menu-link" href="#">Отзывы</a>
           </nav>
+
           <div class="header__social">
             <a class="social-link" href="#"><img src="images/twitter.svg" alt="twitter"></a>
             <a class="social-link" href="#"><img src="images/instagram.svg" alt="instagram"></a>
@@ -40,6 +42,7 @@
             <div class="main__descr">
               2019, фэнтези
             </div>
+
             <div class="main__rating">
               <ul class="main__rating-stars">
                 <li><img src="images/Vector-1.svg" alt="star"></li>
@@ -57,34 +60,55 @@
                 7/10
               </div>
             </div>
+
             <h1 class="main__title">
               Ведьмак
             </h1>
+
             <div class="main__text">
                 Ведьмак Геральт, мутант и убийца чудовищ, на своей верной лошади по кличке Плотва путешествует по Континенту. 
                 За тугой мешочек чеканных монет этот мужчина избавит вас от всякой настырной нечисти — хоть от чудищ болотных, оборотней и даже заколдованных принцесс. 
             </div>
+
             <div class="main__button">
               <a class="main__button-link" href="#">Смотреть онлайн</a>        
             </div>
           </div>
+
           <button class="main__button-play">
             <img src="images/Vector-2.svg" alt="Play" class="play-image">
           </button>
         </div>
+
         <div class="main__series">
-          <div class="main__series-card series-1">
-            <span class="card-subtitle">Серия #1</span>
-            <h2 class="card-title">Начало конца</h2>
+          <!-- Slider main container -->
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="main__series-card series-1">
+                  <span class="card-subtitle">Серия #1</span>
+                  <h2 class="card-title">Начало конца</h2>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="main__series-card series-2">
+                  <span class="card-subtitle">Серия #2</span>
+                  <h2 class="card-title">Четыре знака</h2>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="main__series-card series-2">
+                  <span class="card-subtitle">Серия #2</span>
+                  <h2 class="card-title">Четыре знака</h2>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="main__series-card series-2">
-            <span class="card-subtitle">Серия #2</span>
-            <h2 class="card-title">Четыре знака</h2>
-          </div>
-          <div class="main__series-navigation">
-            <button class="arrow"></button>
-          </div>
-        </div> 
+          <button class="arrow"></button>
+        </div>
+
       </div>
     </main>
   </article>
@@ -95,6 +119,7 @@
         <div class="footer__left">
             © 2020 The Witcher. All right reserved.
         </div>
+
         <div class="footer__right">
           <a class="footer-link" href="#">Privacy Policy</a>
           <a class="footer-link" href="#">Terms of Service</a>
