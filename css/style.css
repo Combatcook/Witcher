@@ -17,11 +17,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
 
-.content {
-    background: url("../images/background.jpg") no-repeat top right 37%;
-    background-size: contain;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: top right 37%;
 }
 
 /*-----------------------------*/
@@ -238,5 +237,22 @@ footer {
 
 @font-face {
     font-family: 'Mason Chronicles';
-    src:url("../fonts/4026.ttf") format("truetype");
+    src: url("../fonts/4026.ttf") format("truetype");
+}
+
+@media (max-width: 760px) {
+    .main__button-play {
+        display: none;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer__left {
+        display: block;
+        margin-bottom: 8px;
+    }
+    .footer-link:first-child {
+        margin-left: 0;
+    }
 }
