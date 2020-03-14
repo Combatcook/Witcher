@@ -39,6 +39,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 2;
 }
 
 .header__menu-list {
@@ -52,13 +53,17 @@ header {
     color: #fff;
 }
 
-.header__menu-list a + a {
+.menu-link + .menu-link {
     margin-left: 24px;
 }
 
-.header__social a + a {
+.social-link + .social-link {
     margin-left: 21px;
 }
+
+.social-link img[src="images/twitter.svg"]{
+    margin-bottom: 2px;
+  }
 
 /*-----------------------------*/
 
@@ -94,6 +99,7 @@ header {
     line-height: 14px;
     position: absolute;
     bottom: 2px;
+    z-index: 1;
 }
 
 .main__title {
@@ -157,7 +163,7 @@ header {
 .main__series {
     display: flex;   
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 43px; /* to remove scroll */
     position: relative;
     max-width: 420px;
 }
@@ -235,6 +241,14 @@ footer {
 
 /*-----------------------------*/
 
+.menu-mobile {
+    display: none;
+    position: fixed;
+    z-index: 3;
+}
+
+/*-----------------------------*/
+
 @font-face {
     font-family: 'Mason Chronicles';
     src: url("../fonts/4026.ttf") format("truetype");
@@ -246,6 +260,7 @@ footer {
     }
     .footer {
         flex-direction: column;
+        justify-content: center;
         align-items: flex-start;
     }
     .footer__left {
@@ -254,5 +269,92 @@ footer {
     }
     .footer-link:first-child {
         margin-left: 0;
+    }
+}
+
+@media (max-width: 540px) {
+    .menu-mobile {
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        position: fixed;
+        top: 40px;
+        right: 35px;
+    }
+    .menu-mobile::before {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: -7px;
+    }
+    .menu-mobile:after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 7px;
+    }
+    .menu-mobile-active {
+        height: 0;
+    }
+    .menu-mobile-active:before {
+        transform: rotate(45deg);
+        margin-top: 0;
+    }
+    .menu-mobile-active:after {
+        transform: rotate(-45deg);
+        margin-top: 0;
+    }
+    .header {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #9D2929;
+        flex-direction: column;
+        width: 250px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .header-active {
+        display: flex;
+    }
+    .header__logo {
+        margin-bottom: 25px;
+    }
+    .header__social {
+        order: 1;
+        margin-bottom: 22px;
+    }
+    .header__menu-list {
+        margin: auto;
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-link + .menu-link{
+        margin-left: 0;
+        margin-top: 17px;
+    }
+    .main-content {
+        margin-top: 70px;
+    }
+    .main__title {
+        font-size: 56px;
+        line-height: 66px;
+    }
+    .main__series {
+        width: 80%;
     }
 }
