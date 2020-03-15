@@ -77,12 +77,17 @@ header {
     margin-bottom: 85px;
 }
 
+.main__descr {
+    animation-delay: .1s;
+}
+
 .main__rating {
     margin-top: 16px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     position: relative;
+    animation-delay: .3s;
 }
 
 .main__rating-stars ul {
@@ -108,12 +113,18 @@ header {
     font-weight: 500;
     font-size: 76px;
     line-height: 89px;
+    animation-delay: .5s;
 }
 
 .main__text {
     max-width: 458px;
     margin-top: 10px;
     line-height: 150%;
+    animation-delay: .7s;
+}
+
+.main__button {
+    animation-delay: 1s;
 }
 
 .main__button-link {
@@ -121,9 +132,7 @@ header {
     font-weight: 500;
     background: #9D2929;
     border-radius: 8px;
-    display: flex;
-    flex-direction: row;
-    padding: 22px 72px;
+    padding: 22px 69px;
     margin-top: 40px;
     max-width: 260px;
     text-decoration: none;
@@ -139,6 +148,9 @@ header {
     position: relative;
     margin: auto;
     outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main__button-play:before {
@@ -151,6 +163,7 @@ header {
     position: absolute;
     left: -16px;
     top: -16px;
+    animation: pulse 1s ease-in-out 2s infinite;
 }
 
 .play-image {
@@ -247,12 +260,12 @@ footer {
     z-index: 3;
 }
 
-/*-----------------------------*/
-
 @font-face {
     font-family: 'Mason Chronicles';
     src: url("../fonts/4026.ttf") format("truetype");
 }
+
+/*---------adaptive-----------*/
 
 @media (max-width: 760px) {
     .main__button-play {
@@ -272,7 +285,7 @@ footer {
     }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 540px) { 
     .menu-mobile {
         display: block;
         width: 30px;

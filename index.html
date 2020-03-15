@@ -8,6 +8,8 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500|Roboto+Condensed:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -40,11 +42,11 @@
     <div class="container">
       <div class="main-content">
         <div class="content-left">
-          <div class="main__descr">
+          <div class="main__descr animated fadeInRight">
             2019, фэнтези
           </div>
 
-          <div class="main__rating">
+          <div class="main__rating animated fadeInRight">
             <ul class="main__rating-stars">
               <li><img src="images/Vector-1.svg" alt="star"></li>
               <li><img src="images/Vector-1.svg" alt="star"></li>
@@ -62,23 +64,25 @@
             </div>
           </div>
 
-          <h1 class="main__title">
+          <h1 class="main__title animated fadeInRight">
             Ведьмак
           </h1>
 
-          <div class="main__text">
+          <div class="main__text animated fadeInRight">
               Ведьмак Геральт, мутант и убийца чудовищ, на своей верной лошади по кличке Плотва путешествует по Континенту. 
               За тугой мешочек чеканных монет этот мужчина избавит вас от всякой настырной нечисти — хоть от чудищ болотных, оборотней и даже заколдованных принцесс. 
           </div>
 
-          <div class="main__button">
-            <a class="main__button-link" href="#">Смотреть онлайн</a>        
+          <div class="main__button animated fadeInRight">
+            <a data-fancybox href="https://www.youtube.com/watch?v=EUizTA1nrfA" class="main__button-link">
+              Смотреть трейлер
+            </a>        
           </div>
         </div>
 
-        <button class="main__button-play">
+        <a data-fancybox href="https://www.youtube.com/watch?v=EUizTA1nrfA" class="main__button-play">
           <img src="images/Vector-2.svg" alt="Play" class="play-image">
-        </button>
+        </a>
       </div>
 
       <div class="main__series">
@@ -130,8 +134,9 @@
     </div>
   </footer>
   
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
   <script src="js/swiper.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
