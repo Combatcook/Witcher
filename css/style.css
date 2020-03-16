@@ -235,6 +235,7 @@ header {
 footer {
     margin-top: auto;
     padding: 20px 0;
+    background-color: #141218;
 }
 
 .footer {
@@ -254,7 +255,7 @@ footer {
 
 /*-----------------------------*/
 
-.menu-mobile {
+.menu-mobile, .menu-mobile-wrapper {
     display: none;
     position: fixed;
     z-index: 3;
@@ -286,14 +287,20 @@ footer {
 }
 
 @media (max-width: 540px) { 
+    .menu-mobile-wrapper {
+        display: block;
+        width: 30px;
+        height: 24px;
+        position: absolute;
+        top: 36px;
+        right: 30px;
+    }
     .menu-mobile {
         display: block;
         width: 30px;
         height: 2px;
         background-color: #fff;
         position: fixed;
-        top: 40px;
-        right: 35px;
     }
     .menu-mobile::before {
         content: "";

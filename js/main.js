@@ -11,10 +11,11 @@ var mySwiper = new Swiper('.swiper-container', {
     }
 });
 
+var menuMobileWrap = document.querySelector('.menu-mobile-wrapper');
 var menuMobile = document.querySelector('.menu-mobile');
 var menu = document.querySelector('.header');
 
-menuMobile.addEventListener('click', function () {
+menuMobileWrap.addEventListener('click', function () {
   menuMobile.classList.toggle('menu-mobile-active')
   menu.classList.toggle('header-active');
 })
