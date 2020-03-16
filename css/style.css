@@ -226,7 +226,7 @@ header {
     background-color: transparent;
     position: absolute;
     top: 42%;
-    right: -35px;
+    right: -50px;
     outline: none;
 }
     
@@ -300,7 +300,6 @@ footer {
         width: 30px;
         height: 2px;
         background-color: #fff;
-        position: fixed;
     }
     .menu-mobile::before {
         content: "";
